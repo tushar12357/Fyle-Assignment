@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Marketing Agency</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <h1>AWARD WINNING</h1>
+        <h2>DIGITAL MARKETING AGENCY</h2>
+        <p>
+          Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+          Pellentesque vitae ante at elit fringilla ac at purus. Morbi sed lacus
+          nec risus finibus feugiat et fermentum.
+        </p>
+        <button onclick="openForm()">CONTACT US</button>
+      </div>
+      <div class="image">
+        <img src="images/hero.png" alt="Woman crafting" />
+      </div>
+    </div>
+<div class="what-we-do-section">
+  <h2>WHAT WE DO</h2>
+  <h3>SERVICES PROVIDE FOR YOU</h3>
+  <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus. Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+  <div class="slider">
+      <div class="slide" style="background-image: url('images/1.png');">
+          <div class="hover-content">
+              <p>WEB DEVELOPMENT</p>
+              <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.</p>
+              <button onclick="window.open('https://fylehq.com', '_blank')">READ MORE</button>
+          </div>
+      </div>
+      <div class="slide" style="background-image: url('images/2.png');">
+          <div class="hover-content">
+              <p>DESIGN</p>
+              <p>Pellentesque vitae ante at elit fringilla ac at purus.</p>
+              <button onclick="window.open('https://fylehq.com', '_blank')">READ MORE</button>
+          </div>
+      </div>
+      <div class="slide" style="background-image: url('images/3.png');">
+          <div class="hover-content">
+              <p>MARKETING</p>
+              <p>Morbi sed lacus nec risus finibus feugiat et fermentum.</p>
+              <button onclick="window.open('https://fylehq.com', '_blank')">READ MORE</button>
+          </div>
+      </div>
+  </div>
+  <div class="dots">
+      <span class="dot active" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+
+    <div class="why-choose-us">
+      <h1>WHY CHOOSE US</h1>
+      <h2>WHY WE ARE BEST</h2>
+      <div class="features">
+        <div class="feature">
+          <img src="images/target.png" alt="Vision & Target" />
+          <h3>Clarified Vision & Target</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="images/2.svg" alt="High Performance" />
+          <h3>High Performance</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="images/3.svg" alt="Maintain security" />
+          <h3>Maintain security Agency</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="images/4.svg" alt="Better Strategy & Quality" />
+          <h3>Better Strategy & Quality</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-project">
+      <h1>OUR PROJECT</h1>
+      <h2>WHY WE ARE BEST</h2>
+      <div class="project">
+        <img id="project-image" src="images/image.png" alt="Project" />
+        <div class="project-details">
+          <div class="active" onclick="changeProjectImage('images/image.png')">
+            Genderless Kei – Japan’s Hot
+            <div class="description">
+              <small>Set to launch on the manufactuerer's new A330neo aircraft in 2017, its offering lots of...</small>
+            </div>
+          </div>
+          <div onclick="changeProjectImage('https://source.unsplash.com/random/250x250')">
+            Better Strategy & Quality
+            <div class="description">
+              <small>Set to launch on the manufactuerer's new A330neo aircraft in 2017, its offering lots of...</small>
+            </div>
+          </div>
+          <div onclick="changeProjectImage('https://source.unsplash.com/random/250x250?food')">
+            Genderless Kei – Japan’s Hot
+            <div class="description">
+              <small>Set to launch on the manufactuerer's new A330neo aircraft in 2017, its offering lots of...</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-form" id="popup-form">
+      <div class="popup-form-content">
+          <form
+          id="contact-form"
+          action="https://getform.io/f/paqglgka"
+          method="POST"
+          >
+          <h2>Talk to Us</h2>
+          <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+          <button type="button" class="close-btn" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="company-growth">
+      <h1>EXPERTS GROWTHS</h1>
+      <h2>OUR COMPANY GROWTH</h2>
+      <div class="growth-stats">
+        <div class="stat">
+          <img src="images/heart (2).svg" alt="" />
+          <span>199+</span>
+          <p>Staticfied Customers</p>
+        </div>
+        <div class="stat">
+          <img src="images/clock (3).svg" alt="" />
+          <span>1591+</span>
+          <p>Days Of Operation</p>
+        </div>
+        <div class="stat">
+          <img src="images/Path 4402.svg" alt="" />
+          <span>283+</span>
+          <p>Complete Project</p>
+        </div>
+        <div class="stat">
+          <img src="images/Path 4406.svg" alt="" />
+          <span>75+</span>
+          <p>Win Awards</p>
+        </div>
+      </div>
+    </div>
+    <div class="clients-feedback">
+      <h1>CLIENT'S FEEDBACK</h1>
+      <h2>PEOPLE SAY'S ABOUT US !</h2>
+      <div class="feedback">
+        <p>
+          "Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s
+          is reproduced below for those interested. Sections Bonorum et Malorum
+          original."
+        </p>
+        <span>JANNAT TUMPA - COO, AMERIMAR ENTERPRISES, INC.</span>
+      </div>
+    </div>
+    <div class="logo-section">
+      <img src="images/Group 500.png" alt="Logo 1" />
+    </div>
+<script src="script.js"></script>
+    <script>
+      let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+
+function showSlides() {
+    slides.forEach((slide, index) => {
+        slide.style.display = 'none';
+        dots[index].classList.remove('active');
+    });
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].classList.add('active');
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+}
+
+function currentSlide(n) {
+    slideIndex = n;
+    slides.forEach((slide, index) => {
+        slide.style.display = 'none';
+        dots[index].classList.remove('active');
+    });
+    slides[slideIndex].style.display = 'block';
+    dots[slideIndex].classList.add('active');
+}
+
+showSlides();
+
+    </script>
+  </body>
+</html>
